@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('res/fond.jpg');
+    background-repeat: repeat;
+    background-size: 250px 250px;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white overlay */
+    background-blend-mode: lighten; /* Blend the color with the image */
+}
+header {
+    background-color: #86c4f3;
+    color: white;
+    padding: 7px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header .loc {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header .loc img {
+    width: 16px;
+    height: 16px;
+}
+
+nav.navi {
+    background-color: #e7f5fc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav.navi p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+nav.navi .nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+nav.navi .nav img {
+    width: 16px;
+    height: 16px;
+}
+
+section.intro {
+    padding: 10px 30px;
+    text-align: left;
+}
+
+section.intro h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+ 
+section.intro .dog {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+section.intro .cat {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+section.intro img {
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.intro p {
+    max-width: 1000px;
+    font-size: 25px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
