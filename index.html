@@ -23,16 +23,52 @@
         </div>
     </nav>
     
-    <section class="intro">
-        <h2>À propos de nous</h2>
-        <section class="dog">
-            <img src="res/dog.png" alt="" height="200" width="200">
-            <p>"Chez Pattes en Santé, nous sommes passionnés par la santé et le bien-être des animaux. Notre mission est d'offrir des soins vétérinaires de qualité, adaptés à chaque compagnon, afin de garantir leur bonheur et leur vitalité au quotidien."</p>
-        </section>
-        <section class="cat">
-            <p>"Notre clinique réunit une équipe de professionnels qualifiés, dédiés à la santé des animaux de compagnie. Grâce à des technologies modernes et à une approche bienveillante, nous veillons à offrir des soins complets et personnalisés à tous nos patients."</p>
-            <img src="res/cat.jpg" alt="" height="200" width="200">
-        </section>
-    </section>    
+    <div class="carousel">
+        <h1>Nos Articles</h1>
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <img src="res/img1.jpg" alt="Image 1" class="carousel-image">
+                <div class="carousel-content">
+                    <h3>Les Soins Vétérinaires Essentiels pour Votre Animal en Hiver</h3>
+                    <p>Protégez la santé de votre compagnon cet hiver avec les conseils et soins adaptés de nos vétérinaires. Assurez-vous qu'il reste en forme grâce à des bilans de santé réguliers.</p>
+                    <div class="carousel-buttons">
+                        <button class="like-button"><img src="res/like.jpg" alt="" width="15" height="15"></button>
+                        <button class="share-button"><img src="res/share.jpg" alt="" width="15" height="15"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="res/img2.jpg" alt="Image 2" class="carousel-image">
+                <div class="carousel-content">
+                    <h3>Vaccins Hivernaux : Pourquoi Ils Sont Cruciaux pour Votre Animal</h3>
+                    <p>Nos vétérinaires vous expliquent l'importance des vaccins saisonniers pour protéger votre animal contre les infections hivernales courantes.</p>
+                    <div class="carousel-buttons">
+                        <button class="like-button"><img src="res/like.jpg" alt="" width="15" height="15"></button>
+                        <button class="share-button"><img src="res/share.jpg" alt="" width="15" height="15"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="res/img3.jpg" alt="Image 3" class="carousel-image">
+                <div class="carousel-content">
+                    <h3>Prévenir les Problèmes de Peau chez les Animaux en Hiver</h3>
+                    <p>Découvrez comment nos vétérinaires peuvent aider à prévenir et traiter les problèmes de peau dus au froid et à la sécheresse hivernale.</p>
+                    <div class="carousel-buttons">
+                        <button class="like-button"><img src="res/like.jpg" alt="" width="15" height="15"></button>
+                        <button class="share-button"><img src="res/share.jpg" alt="" width="15" height="15"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control prev">&#10094;</button>
+        <button class="carousel-control next">&#10095;</button>
+        <div class="carousel-indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>   
 </body>
 </html>
