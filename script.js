@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const carouselContainer = document.querySelector(".carousel-container");
-    const carouselItems = document.querySelectorAll(".carousel-item");
-    const prevButton = document.querySelector(".carousel-control.prev");
-    const nextButton = document.querySelector(".carousel-control.next");
-    const dots = document.querySelectorAll(".carousel-indicators .dot");
+    const carouselContainer = document.querySelector(".carrousel-container");
+    const carouselItems = document.querySelectorAll(".carrousel-item");
+    const prevButton = document.querySelector(".carrousel-control.precedent");
+    const nextButton = document.querySelector(".carrousel-control.suivant");
+    const dots = document.querySelectorAll(".carrousel-indicators .point");
 
     let currentIndex = 0;
     const totalItems = carouselItems.length;
@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const offset = -currentIndex * 100;
         carouselContainer.style.transform = `translateX(${offset}%)`;
 
-        dots.forEach((dot, index) => {
-            dot.classList.toggle("active", index === currentIndex);
+        dots.forEach((point, index) => {
+            point.classList.toggle("active", index === currentIndex);
         });
     }
 
@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCarousel();
     });
 
-    dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
+    dots.forEach((point, index) => {
+        point.addEventListener("click", () => {
             currentIndex = index;
             updateCarousel();
         });

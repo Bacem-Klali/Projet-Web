@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,58 +17,136 @@
     
     <nav class="navi">
         <p>Pour le bien-être et la santé de vos compagnons à quatre pattes</p>
-        <div class="nav">
-            <p>Naviguer</p>
-            <img src="res/nav.png" alt="">
+        <div class="naviguer-boutons">
+            <a href="#art"><button class="bouton-naviguer" >Nos Articles</button></a>
+            <a href="#ser"><button class="bouton-naviguer" >Services</button></a>
+            <a href="#rdv"><button class="bouton-naviguer" >Rendez-vous</button></a>
         </div>
     </nav>
     
-    <div class="carousel">
+    <div class="carrousel" id="art">
         <h1>Nos Articles</h1>
-        <div class="carousel-container">
-            <div class="carousel-item">
-                <img src="res/img1.jpg" alt="Image 1" class="carousel-image">
-                <div class="carousel-content">
+        <div class="carrousel-container">
+            <div class="carrousel-item">
+                <img src="res/img1.jpg" alt="Image 1" class="carrousel-image">
+                <div class="carrousel-content">
                     <h3>Les Soins Vétérinaires Essentiels pour Votre Animal en Hiver</h3>
                     <p>Protégez la santé de votre compagnon cet hiver avec les conseils et soins adaptés de nos vétérinaires. Assurez-vous qu'il reste en forme grâce à des bilans de santé réguliers.</p>
-                    <div class="carousel-buttons">
-                        <button class="like-button"><img src="res/like.jpg" alt="" width="15" height="15"></button>
-                        <button class="share-button"><img src="res/share.jpg" alt="" width="15" height="15"></button>
+                    <div class="carrousel-buttons">
+                        <button class="bouton-aimer"><img src="res/like.jpg" alt="" width="15" height="15"></button>
+                        <button class="bouton-partager"><img src="res/share.jpg" alt="" width="15" height="15"></button>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="res/img2.jpg" alt="Image 2" class="carousel-image">
-                <div class="carousel-content">
+            <div class="carrousel-item">
+                <img src="res/img2.jpg" alt="Image 2" class="carrousel-image">
+                <div class="carrousel-content">
                     <h3>Vaccins Hivernaux : Pourquoi Ils Sont Cruciaux pour Votre Animal</h3>
                     <p>Nos vétérinaires vous expliquent l'importance des vaccins saisonniers pour protéger votre animal contre les infections hivernales courantes.</p>
-                    <div class="carousel-buttons">
-                        <button class="like-button"><img src="res/like.jpg" alt="" width="15" height="15"></button>
-                        <button class="share-button"><img src="res/share.jpg" alt="" width="15" height="15"></button>
+                    <div class="carrousel-buttons">
+                        <button class="bouton-aimer"><img src="res/like.jpg" alt="" width="15" height="15"></button>
+                        <button class="bouton-partager"><img src="res/share.jpg" alt="" width="15" height="15"></button>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="res/img3.jpg" alt="Image 3" class="carousel-image">
-                <div class="carousel-content">
+            <div class="carrousel-item">
+                <img src="res/img3.jpg" alt="Image 3" class="carrousel-image">
+                <div class="carrousel-content">
                     <h3>Prévenir les Problèmes de Peau chez les Animaux en Hiver</h3>
                     <p>Découvrez comment nos vétérinaires peuvent aider à prévenir et traiter les problèmes de peau dus au froid et à la sécheresse hivernale.</p>
-                    <div class="carousel-buttons">
-                        <button class="like-button"><img src="res/like.jpg" alt="" width="15" height="15"></button>
-                        <button class="share-button"><img src="res/share.jpg" alt="" width="15" height="15"></button>
+                    <div class="carrousel-buttons">
+                        <button class="bouton-aimer"><img src="res/like.jpg" alt="" width="15" height="15"></button>
+                        <button class="bouton-partager"><img src="res/share.jpg" alt="" width="15" height="15"></button>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control prev">&#10094;</button>
-        <button class="carousel-control next">&#10095;</button>
-        <div class="carousel-indicators">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <button class="carrousel-control precedent">&#10094;</button>
+        <button class="carrousel-control suivant">&#10095;</button>
+        <div class="carrousel-indicators">
+            <span class="point active"></span>
+            <span class="point"></span>
+            <span class="point"></span>
         </div>
     </div>
+    <div class="section-services" id="ser">
+        <h2>Services et Tarifs</h2>
+        <table class="tableau-prix">
+            <thead>
+                <tr>
+                    <th>Nom du Service</th>
+                    <th>Description</th>
+                    <th>Prix (TND)</th>
+                    <th>Durée</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Consultation Vétérinaire</td>
+                    <td>Examen complet de votre animal pour évaluer sa santé.</td>
+                    <td>50</td>
+                    <td>30 minutes</td>
+                </tr>
+                <tr>
+                    <td>Vaccination</td>
+                    <td>Administration de vaccins essentiels pour votre animal.</td>
+                    <td>80</td>
+                    <td>20 minutes</td>
+                </tr>
+                <tr>
+                    <td>Toilettage</td>
+                    <td>Bain, coupe des ongles et brossage du pelage.</td>
+                    <td>100</td>
+                    <td>1 heure</td>
+                </tr>
+                <tr>
+                    <td>Stérilisation</td>
+                    <td>Procédure de stérilisation pour chiens et chats.</td>
+                    <td>300</td>
+                    <td>2 heures</td>
+                </tr>
+                <tr>
+                    <td>Détartrage</td>
+                    <td>Nettoyage des dents pour prévenir les problèmes buccaux.</td>
+                    <td>150</td>
+                    <td>45 minutes</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="formulaire-rdv" id="rdv">
+        <h2>Prendre Rendez-vous</h2>
+        <form>
+            <label for="name">Nom Complet :</label><br>
+            <input type="text" id="name" name="name" required><br><br>
     
+            <label for="email">Adresse Email :</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="phone">Numéro de Téléphone :</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+    
+            <label for="service">Service :</label><br>
+            <select id="service" name="service" required>
+                <option value="consultation">Consultation Vétérinaire</option>
+                <option value="vaccination">Vaccination</option>
+                <option value="toilettage">Toilettage</option>
+                <option value="sterilisation">Stérilisation</option>
+                <option value="detartrage">Détartrage</option>
+            </select><br><br>
+    
+            <label for="date">Date du Rendez-vous :</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+    
+            <label for="time">Heure du Rendez-vous :</label><br>
+            <input type="time" id="time" name="time" required><br><br>
+    
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+    <footer>
+        <p>Klali Bacem - Groupe 2LIG2</p>
+    </footer>            
     <script src="script.js"></script>   
 </body>
 </html>
